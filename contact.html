@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Anime Warp Café</title>
+<meta name="description" content="Book a table, ask about this month's theme, or vote for next month's world at Anime Warp Café." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="aw-header">
+  <div class="aw-header-inner">
+    <a href="index.html" class="aw-logo"><span class="ring"></span> Anime Warp Café</a>
+    <nav class="aw-nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#builder">Portal Builder</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="current">Contact</a>
+      <a href="contact.html" class="aw-nav-cta">Book a Table</a>
+    </nav>
+    <button class="aw-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="aw-nav-overlay"></div>
+
+<section class="page-hero">
+  <div class="aw-container" style="max-width:640px;">
+    <span class="eyebrow">Contact</span>
+    <h1>Book a table, or vote for next month's world.</h1>
+    <p class="lead">We're currently warped into Ghibli Garden Days through the end of the month. Reach out below for a reservation, a group booking, or to tell us which world you want next.</p>
+  </div>
+</section>
+
+<section class="section" style="border-top:none; padding-top:0;">
+  <div class="aw-container">
+    <div class="contact-grid">
+
+      <form class="contact-form" id="contactForm" onsubmit="event.preventDefault();">
+        <div class="form-grid">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div>
+            <label for="party-size">Party size</label>
+            <input type="number" id="party-size" name="party-size" placeholder="2" min="1" />
+          </div>
+          <div>
+            <label for="trope">Favorite trope</label>
+            <select id="trope" name="trope">
+              <option>Isekai</option>
+              <option>Shōnen</option>
+              <option selected>Slice of Life</option>
+              <option>Mecha</option>
+              <option>Shōjo</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="topic">What's this about?</label>
+            <select id="topic" name="topic">
+              <option>Book a table</option>
+              <option>Group or private event</option>
+              <option>Vote for next month's world</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Date, time, and how many warping in with you?" required></textarea>
+          </div>
+          <div class="full">
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+
+        <div class="form-success" id="formSuccess" role="status" aria-live="polite" tabindex="-1" hidden>
+          <div class="success-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+          </div>
+          <h3>Message received!</h3>
+          <p>Thanks, <span id="successName">friend</span> — your note just warped through the portal.</p>
+          <button type="button" class="btn btn-ghost" id="sendAnother">Send another message</button>
+        </div>
+      </form>
+
+      <div>
+        <div class="info-block">
+          <h3>Visit us</h3>
+          <p>412 NW Couch Street<br>Portland, OR 97209</p>
+        </div>
+        <div class="info-block">
+          <h3>Hours</h3>
+          <p>Daily, 11am – 10pm<br>Kitchen closes at 9:30pm</p>
+        </div>
+        <div class="info-block">
+          <h3>Reservations</h3>
+          <p><a href="mailto:cozy@animewarp.com">cozy@animewarp.com</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="aw-footer">
+  <div class="aw-container aw-footer-inner">
+    <div class="foot-brand"><span class="ring" style="width:24px;height:24px;"></span> Anime Warp Café</div>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#builder">Portal Builder</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="foot-copy">&copy; 2026 Anime Warp Café</div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
